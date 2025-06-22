@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    font-family: 'Fauna One', serif;
+    background-color: #f8f4e3; /* Light parchment color */
+    color: #333333; /* Dark gray text for better contrast */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #D9AF96; /* Soft medium brown */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #006F6A; /* Dark Green for contrast */
+}
+
+h1 {
+    font-family: 'Cormorant', serif;
+    font-variant: small-caps;
+    font-size: 3rem; /* Adjusted size */
+    color: #3C2F2A; /* Dark brown for better contrast */
+    margin: 0;
+    letter-spacing: 0.05em; /* Slight letter-spacing for elegance */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-variant: small-caps;
+    text-decoration: underline;
+    font-size: 1.6rem; /* Slightly smaller for subheadings */
+    color: #006F6A; /* Dark Green */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-variant: small-caps;
+    font-size: 1.6rem; /* Slightly smaller for subheadings */
+    color: #3C2F2A; /* Dark brown for better contrast */
+    margin: 0;
+    letter-spacing: 0.05em; /* Slight letter-spacing for elegance */
+}
+
+ul {
+    list-style: disc;  /* You can use 'disc', 'circle', or 'square' */
+}
+
+ul li::marker {
+    color: #3C2F2A;  /* Dark Green, or any color you'd like */
+    font-size: 1.2em;  /* Adjust size if necessary */
+}
+
+/* Container for the 3-column layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Column Styles */
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    background-color: #EFCBB5; /* Light Brown */
+    border: 2px solid #006F6A; /* Dark Green border for structure */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+/* Button Styling */
+.button {
+    background-color: #006F6A; /* Dark Green */
+    color: white;
+    padding: 12px 24px; /* Larger padding for better clicks */
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    margin-top: 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #006F6A; /* Dark Brown */
+    transform: scale(1.05); /* Slight scale effect for interactivity */
+}
+
+/* Footer */
+footer {
+    background-color: #D9AF96; /* Medium Brown */
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #006F6A;
+    font-size: 1.2em;
+    color: #333333;
+}
+
+footer a {
+    color: #006F6A;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Links */
+a {
+    color: #0000EE; /* Classic blue for links */
+    text-decoration: none; /* No underline initially */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0000CD; /* A purple-ish color for hover (traditional darker color) */
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Scale down font size for mobile */
+    }
+
+    h2 {
+        font-size: 1.4rem; /* Scale down h2 as well */
+    }
+
+    .button {
+        padding: 10px 20px; /* Smaller padding on mobile */
+    }
+}
