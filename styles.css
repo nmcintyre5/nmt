@@ -11,7 +11,7 @@ header {
     background-color: #D9AF96; /* Soft medium brown */
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #006F6A; /* Dark Green for contrast */
+    border-bottom: 3px solid #333333; /* Dark Green for contrast */
 }
 
 h1 {
@@ -28,7 +28,7 @@ h2 {
     font-variant: small-caps;
     text-decoration: underline;
     font-size: 1.6rem; /* Slightly smaller for subheadings */
-    color: #006F6A; /* Dark Green */
+    color: #333333; /* Dark Green */
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -38,7 +38,7 @@ h3 {
     font-family: 'Poppins', sans-serif;
     font-variant: small-caps;
     font-size: 1.6rem; /* Slightly smaller for subheadings */
-    color: #3C2F2A; /* Dark brown for better contrast */
+    color: #333333; /* Dark brown for better contrast */
     margin: 0;
     letter-spacing: 0.05em; /* Slight letter-spacing for elegance */
 }
@@ -48,7 +48,7 @@ ul {
 }
 
 ul li::marker {
-    color: #3C2F2A;  /* Dark Green, or any color you'd like */
+    color: #333333;  /* Dark Green, or any color you'd like */
     font-size: 1.2em;  /* Adjust size if necessary */
 }
 
@@ -65,7 +65,7 @@ ul li::marker {
     margin: 10px;
     padding: 15px;
     background-color: white; /* Light Brown */
-    border: 2px solid #006F6A; /* Dark Green border for structure */
+    border: 2px solid #333333; /* Dark Green border for structure */
     border-radius: 8px; /* Rounded corners for a modern look */
 }
 
@@ -95,7 +95,7 @@ footer {
     background-color: #D9AF96; /* Medium Brown */
     padding: 20px;
     text-align: center;
-    border-top: 3px solid #006F6A;
+    border-top: 3px solid #333333;
     font-size: 1.2em;
     color: #333333;
 }
