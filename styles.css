@@ -159,6 +159,27 @@ a:focus-visible {
     outline-offset: 3px;
 }
 
+.notice {
+    background-color: #E8F0ED;             /* soft green-blue neutral */
+    border-left: 4px solid #0E6B64;         /* matches your header/footer tan */
+    max-width: 80%;     /* reduces width slightly */
+    padding: 12px 14px; /* tighten padding to match proportion */
+    margin: 20px auto; /* centers it horizontally */
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+.notice a {
+    color: #0A3C3A; /* deep cool teal for contrast */      /* readable, on-brand */
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.notice a:hover {
+    color: var(--color-teal);
+}
+
+
 /* === Responsive Media Query === */
 @media (max-width: 768px) {
     .container {
