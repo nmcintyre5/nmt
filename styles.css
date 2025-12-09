@@ -16,12 +16,13 @@ body {
     color: var(--color-dark-brown);
     margin: 0;
     padding: 0;
+    font-size: 17px; /* NEW: slightly larger base */
 }
 
 p {
-    line-height: 1.6;          /* Improved readability */
+    line-height: 1.65;          
     margin-top: 0;
-    margin-bottom: 0.8em;      /* Consistent spacing under paragraphs */
+    margin-bottom: 0.8em;      
 }
 
 /* === Header === */
@@ -50,8 +51,13 @@ h2, h3 {
     font-size: 1.6rem;
     color: var(--color-dark-brown);
     margin-top: 0;
-    margin-bottom: 0.75em;         /* Consistent gap before body text */
+    margin-bottom: 0.75em;         
     letter-spacing: 0.03em;
+}
+
+/* When an h2 follows another h2, tighten the top margin a bit */
+h2 + h2 {
+    margin-top: 0.3em;
 }
 
 /* === List Styles === */
@@ -71,24 +77,25 @@ ul li::marker {
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px auto;
+    margin: 24px auto;
     max-width: 1200px;
-    align-items: stretch;        /* Make columns the same height */
+    align-items: stretch; 
+    padding: 0 20px;   /* NEW */       
 }
 
 .column {
     flex: 1;
     min-width: 300px;
-    margin: 20px;                /* Slightly more space between columns */
-    padding: 32px 28px;          /* ~20–30% more vertical padding */
+    margin: 20px;              
+    padding: 32px 28px;         
     background-color: var(--color-card-bg);
 
-    border-radius: 12px;         /* Slightly rounder corners */
-    border: 1px solid var(--color-border-subtle);  /* Thin border */
+    border-radius: 12px;        
+    border: 1px solid var(--color-border-subtle);  
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);   /* Softer shadow */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);   
     display: flex;
-    flex-direction: column;      /* Helps things align nicely vertically */
+    flex-direction: column;     
 }
 
 .contact-wrapper {
@@ -100,22 +107,27 @@ ul li::marker {
 .button {
     background-color: var(--color-teal);
     color: white;
-    padding: 14px 32px;   /* slightly larger */
+    padding: 14px 32px;   
     border: none;
     cursor: pointer;
     font-family: inherit;        /* Use Lato */
     font-weight: 600;
     font-size: 1.15em;
-    margin-top: 15px;
+    margin-top: 24px; /*NEW*/
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 180px;
+    transition: background-color 0.3s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
 
-.button:hover {
+.button:hover,
+.button:focus-visible {
     background-color: var(--color-dark-teal);
-    transform: scale(1.03);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.16);
+    color: #FFFFFF;  
 }
 
 /* === Footer === */
@@ -133,7 +145,7 @@ footer {
 a {
     color: var(--color-teal);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, box-shadow 0.2s ease;
 }
 
 a:hover {
@@ -141,14 +153,21 @@ a:hover {
     color: var(--color-dark-teal);
 }
 
+/* Clear, accessible focus outline for keyboard users */
+a:focus-visible {
+    outline: 2px solid var(--color-dark-teal);
+    outline-offset: 3px;
+}
+
 /* === Responsive Media Query === */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        padding: 0 16px;
     }
 
     .column {
-        margin: 12px 16px;
+        margin: 12px 0 16px;
         padding: 24px 20px;
     }
 
