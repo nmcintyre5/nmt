@@ -8,11 +8,10 @@
 
     <!-- Link to External CSS File -->
     <link href="styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Poppins:wght@500&family=Anantason+ExtraCondensed:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/logo-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 
@@ -20,17 +19,29 @@
 
     <!-- Header -->
     <header>
+        <img src="assets/logo-icon.png" alt="" class="logo">
         <h1>Nicole M. Tutoring</h1>
-        <h3>EST. 2012</h3>
+        <p class="est">Est. 2012</p>
     </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#books">Books</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <!-- Main Content -->
     <div class="container">
         <!-- Column 1: About and Services -->
-        <div class="column">
+        <div class="column" id="about">
 <h2>About Me</h2>
         <p>Highly experienced and well-rounded educator with nearly 15 years of experience, specializing in mathematics and science. Known for my kindness, understanding, and empathy, I am committed to creating a supportive and engaging learning environment. With strong communication skills, I tailor lessons to meet the diverse needs of students and inspire a love of learning.</p>
-        
+
+        <div class="divider divider-1" aria-hidden="true"></div>
+
         <h2>Services Offered</h2>
         <ul>
             <li>Private, Personalized Tutoring</li>
@@ -44,7 +55,7 @@
         </div>
 
         <!-- Column 2: Testimonials and Contact -->
-        <div class="column">
+        <div class="column" id="reviews">
             <h2>5-Star Reviews</h2>
             <ul>
                 <li><a href="https://www.yelp.com/biz/nicole-m-tutoring-santa-monica" target="_blank">Yelp Reviews</a></li>
@@ -54,7 +65,9 @@
             <h2>Satisfaction Guarantee</h2>
             <p>I want every student to feel supported. If the first session isn’t the right fit for any reason, your fee is fully refunded.</p>
 
-            <h2>Contact Me</h2>
+            <div class="divider divider-2" aria-hidden="true"></div>
+
+            <h2 id="contact">Contact Me</h2>
             <p>If you're interested in scheduling a session or have any questions, please feel free to reach out:</p>
             <div class="contact-wrapper"> 
                 <a href="mailto:nicole@nicolemtutoring.com" class="button">Contact Me</a>
@@ -62,7 +75,7 @@
         </div>
 
         <!-- Column 3: Books, YouTube, and Resources -->
-        <div class="column">
+        <div class="column" id="books">
             <h2>My Books</h2>
             <p>Check out my published books available for purchase on Amazon:</p>
             <ul>
@@ -73,7 +86,9 @@
                 <a href="https://docs.google.com/spreadsheets/d/1fmH8TbkbNLZXBBAOvyukUKbdY7xu8K0S8IbEkiqkPh8/edit?usp=sharing">📘 <strong>Book Update Notice:</strong> View official corrections and updates.</a>
             </p>
 
-            <h2>Learn More on YouTube</h2>
+            <div class="divider divider-3" aria-hidden="true"></div>
+
+            <h2 id="youtube">Learn More on YouTube</h2>
             <p>Watch my free educational YouTube videos and playlists:</p>
             <ul>
                 <li><a href="https://www.youtube.com/c/NicoleMTutoring" target="_blank">YouTube Channel</a></li>
@@ -87,7 +102,11 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Nicole M. Tutoring. All Rights Reserved.</p>
+        <p>&copy; 2026 Nicole M. Tutoring. All Rights Reserved.</p>
+        <div class="footer-accent">
+            <img src="assets/footer_left-trimmed.png" alt="">
+            <img src="assets/footer_right-trimmed.png" alt="">
+        </div>
     </footer>
 
 </body>
